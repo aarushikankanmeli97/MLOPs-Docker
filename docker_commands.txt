@@ -1,0 +1,7 @@
+Build the docker image: "docker build -t mlops-docker-demo ."  #(mlops-docker.demo name can be replaced by any other name)
+Run the container: "docker run -p 5000:5000 mlops-docker-demo"  #(first 5000n is the port exposed in our docker image and secxond 5000 is the user system port. -p maps both the ports bto run the application)
+Tag your image: "docker tag mlops-docker-demo aarushi97/mlops-docker-demo:v1"
+Make sure you are logged in to your docker hub account
+Push image to dockerhub: "docker push aarushi/97 mlops-docker-demo:v1"
+pull image from dockerhub: "docker pull aarushi97/mlops-docker-demo:v1"
+Run the pulled image: "docker run -p 5000:5000 arushi97/mlops-docker-demo:v1"
